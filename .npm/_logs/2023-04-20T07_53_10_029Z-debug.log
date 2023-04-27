@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', 'applicationinsights' ]
+2 info using npm@6.14.4
+3 info using node@v10.19.0
+4 verbose npm-session 71d3ed061108e095
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 401 https://pkgs.dev.azure.com/vishwam22cs/sindhu/_packaging/artifactsnpm/npm/registry/applicationinsights 169ms
+8 silly fetchPackageMetaData error for applicationinsights@latest Unable to authenticate, need: Basic realm="https://pkgsprodsin1.app.pkgs.visualstudio.com/", Bearer, TFS-Federated
+9 timing stage:rollbackFailedOptional Completed in 1ms
+10 timing stage:runTopLevelLifecycles Completed in 298ms
+11 verbose stack Error: Unable to authenticate, need: Basic realm="https://pkgsprodsin1.app.pkgs.visualstudio.com/", Bearer, TFS-Federated
+11 verbose stack     at res.buffer.catch.then.body (/usr/share/npm/node_modules/npm-registry-fetch/check-response.js:94:17)
+11 verbose stack     at process._tickCallback (internal/process/next_tick.js:68:7)
+12 verbose statusCode 401
+13 verbose pkgid applicationinsights@latest
+14 verbose cwd /home/sindhu/react-sample
+15 verbose Linux 5.15.0-1035-azure
+16 verbose argv "/usr/bin/node" "/usr/bin/npm" "i" "applicationinsights"
+17 verbose node v10.19.0
+18 verbose npm  v6.14.4
+19 error code E401
+20 error Unable to authenticate, your authentication token seems to be invalid.
+21 error To correct this please trying logging in again with:
+21 error     npm login
+22 verbose exit [ 1, true ]
